@@ -1,0 +1,17 @@
+/*titulo llamado por ID*/
+#titulo {
+
+    font-size: 35px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card {
+    margin-top: 3rem;
+}
+
+/*boton llamado por CLASE*/
+.btn-action {
+    background-color: rgb(255, 150, 124);
+    color: black
+}
