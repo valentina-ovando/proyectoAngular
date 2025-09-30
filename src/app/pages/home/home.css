@@ -4,6 +4,8 @@
     font-size: 35px;
     text-align: center;
     padding: 1rem;
+
+
 }
 
 .card {
@@ -14,4 +16,8 @@
 .btn-action {
     background-color: rgb(255, 150, 124);
     color: black
+}
+
+.card-img-top{
+    height: 10rem;
 }

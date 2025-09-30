@@ -1,5 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+
+body {
     background-color: rgb(219, 214, 214);
 }
 
+* {
+
+
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+
+}
