@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+img{
+    height: 8rem;
+
+    /*propiedad para ajustar al tamño del contenido y mantener la calidad*/
+    object-fit: cover;
+}
+
+/*pantalla de computadora*/
+@media (min-width: 800px){
+    .card{
+        width: 18rem;
+    }
+
+}
+
+/*pantalla de celular*/
+@media (max-width: 750px){
+
+    .card{
+        width: 9rem;
+    }
+}

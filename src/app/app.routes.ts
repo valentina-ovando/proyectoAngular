@@ -6,9 +6,9 @@ import { Products } from './pages/products/products';
 
 export const routes: Routes = [
     /*definimos ruta general o raiz en especifico que nos lleve a la ruta home */
-    {path: "**", component: Home },
+    {path: "", component: Home },
     {path: `home`, component: Home},
-    {path: `about`, component: About},
+    {path: `fish-characteristics`, component: About},
     {path: `contact`, component: Contact},
     {path: `products`, component: Products}
     
