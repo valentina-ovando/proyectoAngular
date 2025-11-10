@@ -1,0 +1,40 @@
+#icono{
+    margin-left: 8px;
+}
+
+#carousel {
+    height: 400px !important;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#contactanos{
+    align-items: center;
+}
+
+
+
+ .container2{ 
+    display: flex;
+    justify-content:space-around;
+    height: 1rem;
+    margin-top: 1rem;
+    
+}
+
+
+
+/* #contacto{
+    justify-content: center;
+} */
+

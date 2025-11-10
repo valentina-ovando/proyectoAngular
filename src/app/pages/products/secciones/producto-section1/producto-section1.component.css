@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#seccionA {
+    background: #5f9cec;
+    color: white;
+    
+    
+
+}

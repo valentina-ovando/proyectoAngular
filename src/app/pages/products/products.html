@@ -5,14 +5,14 @@
             <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
             <div class="card-body">
                 <h5 class="card-title">{{i.titulo}}</h5>
-                <p class="card-text">{{i.descripcion}} - {{i.anualPublicacion}}</p>
+                <p class="card-text">{{i.anualPublicacion}}</p>
 
-                <button type="button" class="btn btn-secondary" >Ver mas{{tarjetaSeleccionada?.descripcion}}</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#VerMasInfo"
-                    (click)="verMas(i)">
-                    <strong>Comprar</strong>
                 
-                </button>
+                <div id="comprar"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#VerMasInfo" (click)="verMas(i)">
+                        <strong>Ver mas</strong>
+
+                    </button></div>
             </div>
         </div>
     </div>
@@ -32,8 +32,8 @@
                 {{tarjetaSeleccionada?.descripcion}}
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
             </div>
         </div>
     </div>

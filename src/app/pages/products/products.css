@@ -1,9 +1,5 @@
-.container {
-    display: flex;
-    justify-content: center;
 
-    padding: 1rem;
-}
+
 
 .container {
     display: flex;
@@ -12,10 +8,21 @@
 }
 
 #dory {
-    background: #308bd6;
+    background: #a7cfb3;
     color: white;
+    
+    
 
 }
+
+#vermas{
+    margin-bottom: 5px;
+}
+
+
+
+
+
 
 
 

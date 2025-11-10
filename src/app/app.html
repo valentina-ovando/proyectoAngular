@@ -1,42 +1,98 @@
 <h1 class="text-danger"></h1>
-<nav id= "navegador" class="navbar navbar-expand-lg ">
+<!-- <nav id= "navegador" class="navbar navbar-expand-lg "> 
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><h2><strong>Mimitos</strong></h2></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!--1ra etiqueta Home-->
+                1ra etiqueta Home
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="Inicio"><strong>Inicio</strong></a>
                 </li>
-                <!--2da etiqueta About-->
+                2da etiqueta About
                 <li class="nav-item">
-                    <a class="nav-link" href="fish-characteristics">Fish Characteristics</a>
+                    <a class="nav-link" href="terminos y condiciones"><strong>Terminos y condiciones</strong></a>
                 </li>
 
-                <!--3ra etiqueta Contact-->
+                3ra etiqueta Contact
                 <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="contacto"><strong>Contacto</strong></a>
                 </li>
                 
-                <!--4ta etiqueta Products-->
+                4ta etiqueta Products
                 <li class="nav-item">
-                    <a class="nav-link" href="products">Products</a>
+                    <a class="nav-link" href="producto"><strong>Producto</strong></a>
                 </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="oferta"><strong>Ofertas</strong></a>
+                </li>
+
+                 <li class="nav-item">
+                    <a class="nav-link" href="galeria"><strong>Galeria</strong></a>
+                </li>
+                
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Mimitos">Mimitos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- 1ra etiqueta Inicio -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="inicio">Inicio</a>
+                </li>
+                <!-- 2da etiqueta terminos y condiciones -->
+                <li class="nav-item">
+                    <a class="nav-link" href="terminos-condiciones">Terminos y Condiciones</a>
+                </li>
+                <!-- 3ra etiqueta oferta -->
+                <li class="nav-item">
+                    <a class="nav-link" href="oferta">Oferta</a>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Galeria
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="galeria">Productos</a></li>
+                        <li><a class="dropdown-item" href="seccion-niños">Seccion niños</a></li>
+                        <li><a class="dropdown-item" href="seccion-niñas ">Seccion niñas</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                </li>
+
+                <!-- <li class="nav-item"> 
+                    <a class="nav-link disabled" aria-disabled="true">Productos</a>
+                </li>-->
+            </ul>
+            <form class="d-flex" role="buscar">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
         </div>
     </div>
 </nav>
 
 <!--etiqueta que muestra el contenido de mi aplicacion-->
-<router-outlet />
+<router-outlet></router-outlet>
 
 <!--2 formas de llamar a un componente desde otra ubicacion-->
 <!--Op1:-->

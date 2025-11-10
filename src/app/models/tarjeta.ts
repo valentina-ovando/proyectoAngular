@@ -1,10 +1,12 @@
 
 export interface Tarjeta {
-    id: string;
+    id: string; 
     img: string;
     alt:string;
     titulo:string;
     descripcion:string;
     anualPublicacion:number;
 }
+
+
 

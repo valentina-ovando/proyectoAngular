@@ -1,22 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Pacifico&display=swap');
 
 
 
 body {
-    background-color: rgba(10, 70, 119, 0.952);
+    background-color: rgba(156, 186, 211, 0.952);
 }
 
 * {
 
 
-    font-family: "Italiana", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
-
+  
+  font-family: "Croissant One", serif;
+  font-weight: 400;
+  font-style: normal;
 
 
 }
+
+
+
+

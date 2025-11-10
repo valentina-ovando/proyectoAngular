@@ -4,7 +4,7 @@
     font-size: 35px;
     text-align: center;
     padding: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
 
 
 }
@@ -23,6 +23,3 @@
     background-color: rgb(228, 92, 255);
 }
 
-.card-img-top{
-    height: 10rem;
-}
