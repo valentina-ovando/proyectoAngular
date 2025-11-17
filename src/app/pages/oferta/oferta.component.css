@@ -1,0 +1,41 @@
+/* Ajustar el tamaño del carrusel */
+#carouselExample {
+  max-width: 900px;   /* Cambiá el ancho si querés */
+  margin: 0 auto;     /* Centrar el carrusel */
+  border-radius: 15px;
+  overflow: hidden;   /* Para que las imágenes sigan el borde redondeado */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes del carrusel */
+#carouselExample img {
+  height: 450px;          /* Fijar alto (podés modificarlo) */
+  object-fit: cover;      /* Recorta la imagen sin deformarla */
+}
+
+/* Flechas de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Flechas blancas */
+  width: 40px;
+  height: 40px;
+}
+
+/* Hover en controles */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.8;
+}
+
+/* Indicadores (si los activás) */
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ffd4e4; /* por ejemplo un rosita estilo tienda de bebés */
+}
