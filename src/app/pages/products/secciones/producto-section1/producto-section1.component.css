@@ -1,13 +1,67 @@
-.container {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+.ninos-section {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #f7faff; /* celeste pastel suave */
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
-#seccionA {
-    background: #5f9cec;
-    color: white;
-    
-    
+.ninos-container {
+  max-width: 1200px;
+  width: 100%;
+}
 
+.ninos-container h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #6b92b9;
+  margin-bottom: 10px;
+}
+
+.ninos-desc {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Galería */
+.ninos-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.ninos-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.ninos-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.ninos-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 12px;
+}
+
+.ninos-card h3 {
+  font-size: 18px;
+  color: #4c6d8a;
+  margin-bottom: 5px;
+}
+
+.ninos-card p {
+  font-size: 14px;
+  color: #777;
 }

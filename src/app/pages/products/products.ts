@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+/*import { Component } from '@angular/core';
 import { Tarjeta } from '../../models/tarjeta';
 import { CommonModule } from '@angular/common';
 @Component({
@@ -151,11 +151,58 @@ export class Products {
     ]
   }
 
-  /*variable para tomar una tarjeta seleccionada */
+  /*variable para tomar una tarjeta seleccionada 
   tarjetaSeleccionada?: any = null;
 
-  /*recibe el elemento seleccionado por parametro y la asigna a "tarjetaSeleccionada" */
+  /*recibe el elemento seleccionado por parametro y la asigna a "tarjetaSeleccionada" 
   verMas(tarjeta: any) {
     this.tarjetaSeleccionada = tarjeta;
   }
+}*/
+
+import { Component } from '@angular/core';
+import { Tarjeta } from '../../models/tarjeta';
+import { CommonModule } from '@angular/common';
+@Component({
+ selector: 'app-products',
+  imports: [CommonModule],
+  templateUrl: './products.html',
+  styleUrl: './products.css',
+  standalone: true
+})
+export class Products {
+
+   public infoTarjeta: Tarjeta[];
+   constructor() {
+    this.infoTarjeta = [
+
+    {
+      nombre: 'Body Algodón',
+      precio: 4500,
+      img: 'assets/img/body1.jpg',
+      descripcion: 'Body hecho con algodón hipoalergénico, suave y cómodo para tu bebé.'
+    },
+    {
+      nombre: 'Manta Polar',
+      precio: 6900,
+      img: 'assets/img/manta.jpg',
+      descripcion: 'Manta térmica ideal para invierno, súper suave y liviana.'
+    },
+    {
+      nombre: 'Gorrito Tejido',
+      precio: 3200,
+      img: 'assets/img/gorro.jpg',
+      descripcion: 'Gorro tejido a mano con lana premium que abriga sin irritar.'
+    }
+    ]
+    
+ } ;
+  
+
+  productoSeleccionado: any = null;
+
+  abrirModal(prod: any) {
+    this.productoSeleccionado = prod;
+  }
 }
+{}

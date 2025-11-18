@@ -1,13 +1,69 @@
-.container {
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+/* ---------------------------
+   SECCIÓN NIÑAS
+---------------------------- */
+
+.ninas-section {
+  padding: 60px 20px;
+  background-color: #ffeef4; /* rosado pastel muy suave */
 }
 
-#seccionB{
-    background: #ebabfff6;
-    color: white;
-    
-    
-
+.ninas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
+
+.ninas-section h2 {
+  font-size: 2.2rem;
+  color: #d35a8b; /* rosa fuerte */
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.ninas-desc {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  margin-bottom: 40px;
+}
+
+/* --- Galería --- */
+.ninas-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* --- Cards --- */
+.ninas-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.ninas-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ninas-card h3 {
+  font-size: 1.2rem;
+  color: #d84c85;
+  margin: 8px 0;
+}
+
+.ninas-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Hover */
+.ninas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
