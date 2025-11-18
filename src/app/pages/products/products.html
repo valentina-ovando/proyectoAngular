@@ -1,40 +1,40 @@
-<section class="productos">
-  <h2 class="titulo">Nuestros Productos</h2>
+<div class="container">
+  <div class="row">
 
-  <div class="grid-productos">
-    <div class="card-producto" *ngFor="let prod of productos">
-      <img [src]="prod.img" [alt]="prod.nombre">
 
-      <h3>{{ prod.nombre }}</h3>
-      <p class="precio">${{ prod.precio }}</p>
+    <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4 ">
+      <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
+      <div class="card-body" id="dory">
 
-      <button class="btn-ver" (click)="abrirModal(prod)" data-bs-toggle="modal" data-bs-target="#modalProducto">
-        Ver más
-      </button>
+        <!-- interpoblacion que permite acceder a una propiedad especifica del modelo -->
+        <h5 class="card-title">{{i.titulo}}</h5>
+        <p class="card-text">{{i.descripcion}} - {{i.anualPublicacion}}</p>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#VerMasInfo"
+          (click)="verMas(i)">
+          Comprar
+         
+        </button>
+      </div>
     </div>
   </div>
-</section>
+</div>
 
-<!-- MODAL -->
-<div class="modal fade" id="modalProducto" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="VerMasInfo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
-
       <div class="modal-header">
-        <h5 class="modal-title">{{ productoSeleccionado?.nombre }}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
       <div class="modal-body">
-        <img [src]="productoSeleccionado?.img" class="img-fluid mb-3">
-        <p>{{ productoSeleccionado?.descripcion }}</p>
-        <p class="precio-modal">Precio: ${{ productoSeleccionado?.precio }}</p>
+        <img src="{{tarjetaSeleccionada.img}}" alt="{{tarjetaSeleccionada.alt}}">
+        {{tarjetaSeleccionada.descripcion}}
       </div>
-
       <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
       </div>
-
     </div>
   </div>
 </div>
