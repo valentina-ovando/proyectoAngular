@@ -25,11 +25,11 @@ export class NewProductComponent {
     Validators.required -> validado como valor requerido estrictamente*/
 
   nuevoProducto = new FormGroup({
-    nombre: new FormControl('', Validators.required),
-    descripcion: new FormControl('', Validators.required),
-    precio: new FormControl(null, Validators.required),
+    nombre: new FormControl('', Validators.required), //campo obligatorio de tipo texto
+    descripcion: new FormControl('', Validators.required), //campo obligatorio de tipo texto
+    precio: new FormControl(null, Validators.required), //campo obligatorio de tipo numerico
     img: new FormControl('', Validators.required),
-    alt: new FormControl('', Validators.required)
+    alt: new FormControl('', Validators.required) //campo opcional para la URL de la imagen
 
   })
 
@@ -47,8 +47,11 @@ export class NewProductComponent {
         precio: this.nuevoProducto.value.precio!
       }
 
+        //agrega el nuevo producto a la coleccion
       this.coleccionProductos.push(nuevoProducto)
+      alert(`Se creo un nuevo producto: ${nuevoProducto.nombre}`)
 
+      //muestra en consola el producto agregado y la coleccion
       console.log("Producto agregado: ", nuevoProducto)
       console.log("Coleccion actual de productos: ", this.coleccionProductos)
 

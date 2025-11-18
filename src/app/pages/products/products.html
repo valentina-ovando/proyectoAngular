@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container"> 
   <div class="row">
 
 
@@ -6,7 +6,7 @@
       <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
       <div class="card-body" id="dory">
 
-        <!-- interpoblacion que permite acceder a una propiedad especifica del modelo -->
+         interpoblacion que permite acceder a una propiedad especifica del modelo 
         <h5 class="card-title">{{i.titulo}}</h5>
         <p class="card-text">{{i.descripcion}} - {{i.anualPublicacion}}</p>
 
@@ -31,6 +31,64 @@
         <img src="{{tarjetaSeleccionada.img}}" alt="{{tarjetaSeleccionada.alt}}">
         {{tarjetaSeleccionada.descripcion}}
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<div class="container mt-4" id="dory">
+  <div class="row">
+
+    <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+
+      <div class="card h-100">
+
+        <!-- Imagen visible siempre -->
+        <img [src]="i.img" class="card-img-top" [alt]="i.alt">
+
+        <div class="card-body">
+          <h5 class="card-title">{{i.titulo}}</h5>
+          <p class="card-text text-muted">{{i.anualPublicacion}}</p>
+
+          <!-- Botón que abre el modal -->
+          <button type="button"
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#VerMasInfo"
+                  (click)="verMas(i)">
+            Comprar
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="VerMasInfo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">{{tarjetaSeleccionada?.titulo}}</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img [src]="tarjetaSeleccionada?.img"
+             [alt]="tarjetaSeleccionada?.alt"
+             class="img-fluid mb-3">
+
+        <!-- La descripción SOLO aparece acá -->
+        <p>{{tarjetaSeleccionada?.descripcion}}</p>
+      </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         <button type="button" class="btn btn-primary">Comprar</button>

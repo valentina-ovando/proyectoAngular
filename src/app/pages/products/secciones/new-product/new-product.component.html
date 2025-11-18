@@ -4,23 +4,42 @@
     <!-- Inserto etiqueta "formgroup" para crear un formulario y la igualo a su nombre -->
     <!-- [formGroup] -> DIRECTIVA de formularios reactivos -> El formulario reacciona a una acción -->
     <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()">
-        <div class="mb-3">
+
+        <!-- campo de texto para el nombre del producto -->
+        <div class="mb3">
             <label for="nombre" class="form-label">Nombre</label>
             <!-- formControlName -> atributo que vincule con la informacion de mi propiedad -->
             <input id="nombre" type="text" class="form-control" formControlName="nombre">
         </div>
 
-
-        <div class="mb-3">
+        <!-- campo de texto para la descripcion -->
+        <div class="mb3">
             <label for="descripcion" class="form-label">Descripcion</label>
             <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
         </div>
 
-        <div class="mb-3">
+        <!--campo numerico para el precio  -->
+        <div class="mb3">
             <label for="precio" class="form-label">Precio</label>
             <input id="precio" type="number" class="form-control" formControlName="precio">
         </div>
-        <!-- El boton se deshabilita cuando el "nuevoProducto" no es valido ej: faltan campos por rellenar o no cumplen el valor esperado -->
+
+            <!-- campo de texto para la URL o ruta de imagen -->
+         <div class="mb3">
+            <label for="imagen" class="form-label">Imagen</label>
+            <input id="imagen" type="text" class="form-control" formControlName="imagen">
+        </div>
+
+            <!-- campo de texto para el nombre de la imagen (ej: "producto1.jpg") -->
+         <div class="mb3">
+            <label for="nombreimagen" class="form-label">nombre imagen</label>
+            <input id="nombreimagen" type="text" class="form-control" formControlName="nombreimagen">
+        </div>
+
+       
+        <!-- Boton guardar:
+          se deshabilita automaticamente si el formulario NO es valido.[formArrayName]="
+          Eso se controla con [disabled]="!nuevoproducto"-->
         <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">Guardar</button>
 
 

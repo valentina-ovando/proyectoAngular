@@ -14,7 +14,7 @@ export const routes: Routes = [
     {path: `inicio`, component: Home},
     {path: `terminos-condiciones`, component: About},
     {path: `contacto`, component: Contact},
-    {path: "new-products", component: NewProductComponent},
+    {path: "new-product", component: NewProductComponent},
     {path: "galeria", component: Products },
     {path: "oferta", component: OfertaComponent},
     {path: "seccion-niños", component: ProductoSection1Component},
